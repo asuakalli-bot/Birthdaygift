@@ -1,1 +1,50 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffe6f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .card {
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 18px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card" onclick="showMsg()">
+    <h1>For Faria Mondal 🎂</h1>
+    <p id="msg">🎉 Happy Birthday 🎉</p>
+    <small>Tap me!</small>
+  </div>
+
+  <script>
+    function showMsg() {
+      document.getElementById("msg").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
